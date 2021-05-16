@@ -6,7 +6,7 @@ bot = commands.Bot(command_prefix='>')
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
-    bot.run('ODQzNDc0MjU2ODU5ODg5NjY1.YKEYnQ.XscFA8A6wr63Sp9tnX1yahEK4-Q')
+    bot.run('token')
 
     class MyClient(discord.Client):
         async def on_ready(self):
