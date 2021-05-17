@@ -25,3 +25,6 @@ async def ping(ctx):
     client.run('')
      token = os.environ.get('BOT_TOKEN')
         bot.run(str(token))
+        @bot event
+async def on_ready():
+    print("bot online")
