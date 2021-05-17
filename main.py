@@ -1,8 +1,9 @@
 import discord
+import os
 import logging
 from discord.ext import commands
 from config import settings
-bot = commands.Bot(command_prefix='>')
+bot = commands.Bot(command_prefix='+')
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
@@ -21,4 +22,6 @@ async def ping(ctx):
                 await message.channel.send('pong')
 
     client = MyClient()
-    client.run('ODQzNDc0MjU2ODU5ODg5NjY1.YKEYnQ.XscFA8A6wr63Sp9tnX1yahEK4-Q')
+    client.run('')
+     token = os.environ.get('BOT_TOKEN')
+        bot.run(str(token))
